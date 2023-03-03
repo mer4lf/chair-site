@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title> CSS работа с блоками </title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta charset="UTF-8">
+	<!-- Фиксированная верстка
+	<meta name="viewport" content="width=1200">
+	в контейнерах использоать min-width, остальные значения фиксированы
+	!-->
+	<!-- Отзывчивая верстка
+	<meta name="viewport" content="width=device-width">
+	в контейнерах использовать max-width, остальные значения в %
+	!-->
+	<!-- Адаптивная верстка
+	<meta name="viewport" content="width=device-width">
+	в контейнерах использовать max-width, остальные значения в %
+	!-->
+
+	<!-- Отзывчиво-адаптивная верстка
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	в контейнерах использовать max-width, остальные значения в %
+	!-->
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="content">
+		<div class="header">
+			<div class="header__menu">
+				<div class="header__menu_item">Доставка</div>
+				<div class="header__menu_item">Оплата</div>
+				<div class="header__menu_item">Отзывы</div>
+				<div class="header__menu_item">Вопрос - ответ</div>
+				<div class="header__menu_item">Контакты</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="second-header">
+					<div class="second-header_left-side">
+						<div class="second-header_shop-image">
+							<img src="./img/logo.png" alt="">
+						</div>
+						<div class="second-header_shop-name">BEAUTY</div>
+					</div>
+					<div class="second-header_right-side">
+						<div class="phone-number">8 (812) 123-45-67</div>
+						<div class="second-header_contact-button">
+							<button class="contact_button">Обратный звонок</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu_item">Парикмахерская</div>
+				<div class="menu_item">Барбершоп</div>
+				<div class="menu_item">Маникюр</div>
+				<div class="menu_item">Педикюр</div>
+				<div class="menu_item">Массаж</div>
+				<div class="menu_item">Мебель</div>
+			</div>
+			<div class="sale">
+				<div class="sale_container">
+					<div class="chair_container">
+						<div class="chair_title">Супер кресло</div>
+						<div class="chair_description">Текст акции всегда отражает суть, а не просто
+							болтовню, поэтому внимательнее
+						</div>
+						<button class="chair_button">Подробнее</button>
+					</div>
+					<div class="chair-img">
+						<div class="sale_bg1"></div>
+						<div class="sale_bg2"></div>
+						<img src="./img/chair.png" alt="" class="sale-img">
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="goods_container">
+					<div class="goods_header">
+						<div class="goods_header_text">Специальные предложения</div>
+						<img src="./img/car.png" alt="" class="goods_header_img">
+					</div>
+					<div class="goods_ords">
+						<div class="goods_item">
+							<img src="./img/goods_chair.png" alt="" class="goods-image">
+							<div class="goods_description">Парикмахерское кресло «Норм» гидравлическое</div>
+							<div class="goods_price">9 900 ₽</div>
+							<button class="goods_buy-button">Купить</button>
+						</div>
+						<div class="goods_item">
+							<img src="./img/goods_chair.png" alt="" class="goods-image">
+							<div class="goods_description">Парикмахерское кресло «Норм» гидравлическое</div>
+							<div class="goods_price">9 900 ₽</div>
+							<button class="goods_buy-button">Купить</button>
+						</div>
+						<div class="goods_item">
+							<img src="./img/goods_chair.png" alt="" class="goods-image">
+							<div class="goods_description">Парикмахерское кресло «Норм» гидравлическое</div>
+							<div class="goods_price">9 900 ₽</div>
+							<button class="goods_buy-button">Купить</button>
+						</div>
+						<div class="goods_item">
+							<img src="./img/goods_chair.png" alt="" class="goods-image">
+							<div class="goods_description">Парикмахерское кресло «Норм» гидравлическое</div>
+							<div class="goods_price">9 900 ₽</div>
+							<button class="goods_buy-button">Купить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subscribe">
+				<div class="sub-blocks">
+					<div class="sub-blocks_left-block">
+						<div class="text-block">
+							<div class="text-block_bonuses">Получайте бонусы и подарки</div>
+							<div class="text-block_description">Каждый месяц разыгрываем<br>10 000 рублей для
+								наших клиентов
+							</div>
+							<form action="#" method="post" enctype="multipart/form-data"></form>
+							<input class="email-input" placeholder="Введите e-mail" type="text"
+							       name="email"
+							       value=""></input>
+						</div>
+						<img src="./img/mail.png" alt="" class="img-block">
+					</div>
+					<div class="sub-blocks_right-block">
+						<div class="text-block_bonuses">Заходите к нам</div>
+						<div class="text-block_description">Более 300 магазинов<br>по всей России</div>
+						<button class="text-block_map-button">Карта магазинов</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pre-footer">
+			<div class="pre-footer_container">
+				<div class="icons">
+					<img src="./img/youtrube.png" alt="" class="icon-img_yt circle-icn">
+					<img src="./img/vk.png" alt="" class="icon-img_vk circle-icn">
+					<img src="./img/facebook-logo.png" alt="" class="icon-img_fb circle-icn">
+					<img src="./img/instagram.png" alt="" class="icon-img_inst circle-icn">
+				</div>
+				<div class="adress">198555, Невский пр. 140, офис 140</div>
+				<div class="information">
+					<div class="phone-number">8 (812) 123-45-67</div>
+					<button class="callback">Обратный вызов</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer_big"></div>
+		<div class="footer_small">
+			<div class="footer_small_item">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для
+				салонов красоты
+			</div>
+			<div class="footer_small_item">Политика конфиденциальности</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
